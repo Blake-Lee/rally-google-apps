@@ -1,5 +1,5 @@
 # Rally ID Linker
-This add-on is for Google Spreadsheet. If a cell is changed and it contains an appropriate ID,
+This add-on is for Google Spreadsheet. If a cell is changed and it contains an appropriate ID, it will create a hyperlink.
 
 ## Installation Instructions
 1. Open appropriate spreadsheet.
