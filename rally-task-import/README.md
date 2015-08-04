@@ -44,4 +44,7 @@ This add-on is for Google Spreadsheet. It helps create the Rally Task Import tem
 6. Click 'Save'
 7. Success! You should now see the tasks.
 
+### Importing into Rally
+[Rally User Guide](https://help.rallydev.com/importing-and-exporting-data)
+
 
