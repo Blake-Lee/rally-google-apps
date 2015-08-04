@@ -3,7 +3,10 @@ This add-on is for Google Spreadsheet. If a cell is changed and it contains an a
 
 ## Installation Instructions
 1. Open appropriate spreadsheet
-2. On the menu bar, click Tools
+2. Create a new blank project in the script editor
+  1. On the menu bar, click 'Tools'
+  2. Click 'Script Editor'
+  3. Click 'Close' on the Welcome Screen
 3. Click Script Editor
 4. Click Close on the Welcome Screen
 5. Add the Code from Code.gs in this repo into that file
