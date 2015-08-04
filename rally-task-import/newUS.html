@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+<script
+        src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script>
+<form id="newUS">
+
+    <div class="inline form-group" style="margin-left:12px !important">
+        <label for=id>User Story ID</label>
+        <input id="id" type="text" name="id" placeholder="US1234567" />
+    </div>
+    <div class="inline form-group">
+        <label for=name>User Story Name</label>
+        <input id="name" type="text" name="name" placeholder="[project]Story Name"/>
+    </div>
+    <div class="inline form-group">
+        <label for=owner>Owner</label>
+        <input id="owner" type="text" name="owner" placeholder="user@email.com"/>
+    </div>
+    <br/>
+    <button  class="create" style="margin: 10px 0 0 12px !important;"
+             onclick="google.script.run.withSuccessHandler(onSuccess).newUserStory(this.parentNode)" >Save</button>
+
+</form>
+<script>
+    function onSuccess(){
+        google.script.host.close();
+
+    }
+</script>

@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+<script
+        src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script>
+<form id="newUS">
+    <h1>Include the following tasks:</h1>
+    <div id="tasks">
+    </div>
+    <button class="create" style="margin: 10px 0 0 12px !important;"
+            onclick="google.script.run.withSuccessHandler(onSuccess).editUserStory(this.parentNode)">Save</button>
+</form>
+<script>
+    $(function() {
+        google.script.run.withSuccessHandler(populateTasks).getDefaultTasks();
+    });
+
+
+    function populateTasks(tasks){
+        for(var i = 0; i < tasks.length; i ++){
+            $('#tasks').append("<div style='margin-left:12px !important;'><input type='checkbox' name='" +tasks[i] + "'><label for='" +tasks[i] + "'>" + tasks[i] + "</label></div>" );
+        }
+    }
+
+
+
+    function onSuccess(){
+        google.script.host.close();
+
+    }
+</script>
