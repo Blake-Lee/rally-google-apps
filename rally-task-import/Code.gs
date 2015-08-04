@@ -1,5 +1,4 @@
-
-
+//Replace with tasks you use most often.
 function getDefaultTasks(){
 
 return ['Code Change',
